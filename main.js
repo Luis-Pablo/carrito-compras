@@ -1,5 +1,14 @@
+const carrito = document.querySelector('#carrito');
+const listaCurso = document.querySelector('#lista-curso');
+const contenedorCarrito = document.querySelector('#lista-carrito');
+const vaciarCarritoBtn = document.querySelector('#vaciar-Carrito');
+let articulosCarrito = [];
 
+cargarEventListeners();
 
+function cargarEventListeners() {
+  listaCurso.addEventListener('click', agregarCurso);
+}
 
 /*
 import './style.css'
